@@ -16,7 +16,7 @@
   <article></article>
 
   <script>
-    fetch(list).then(function(response){
+    fetch('list').then(function(response){
       response.text().then(function(text){
         document.querySelector('#nav').innerHTML = text;
       })
@@ -29,12 +29,13 @@
         })
       })
     }
-
+    /*
     if(lcoation.hash){
       fetch(location.hash.substr(2));
     }else{
       fetchPage('welcome');
     }
+    */
   </script>
 </body>
 </html>
